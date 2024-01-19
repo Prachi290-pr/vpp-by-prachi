@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-image: linear-gradient(to bottom right,#e77008 , #ffd900);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        .login-container button {
+            background-color: #0c134a;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <input type="text" placeholder="Username" id="username" required>
+            <br>
+            <input type="password" placeholder="Password" id="password" required>
+            <br>
+            <button type="button" onclick="login()">&#8594;</button>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            // In a real scenario, you would perform AJAX request or other methods to validate credentials
+            alert('Login button clicked. Add your login logic here.');
+        }
+    </script>
+</body>
+</html>
